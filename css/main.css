@@ -143,6 +143,30 @@ h3 {
   margin-right: auto;
 }
 
+.logo-mail::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url(../images/logo/mail.svg);
+  background-repeat: no-repeat;
+}
+
+.logo-phone::before {
+  content: "";
+  /*display: inline-flex;*/
+  display: inline-block;
+  /*justify-content: center;
+  align-items: center;*/
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url(../images/logo/smartphone.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .header-container .logo {
   margin-right: 93px;
 }

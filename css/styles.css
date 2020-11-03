@@ -1,3 +1,13 @@
+:root {
+  --main-text-color: #212121;
+  --accent-color: #2196f3;
+  --title-color: #757575;
+  --white: #ffffff;
+  --white-background: #e5e5e5;
+  --footer-background: #2f303a;
+  --clients: #afb1b8;
+}
+
 main {
   background-color: var(--background-color);
 }
@@ -11,8 +21,16 @@ main {
   text-decoration: none;
 }
 
-.big-title {
+.hero {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--footer-background);
+  background-image: url(../images/heroes.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-content {
@@ -134,7 +152,6 @@ main {
 
 .command-item {
   display: flex;
-  flex-wrap: wrap;
   padding-top: 50px;
 }
 
@@ -142,12 +159,15 @@ main {
   display: block;
   border: 1px;
   border-radius: 0px 0px 4px 4px;
-  flex-basis: calc(100% / 4 - 30px);
+  /*flex-basis: calc(100% / 4 - 30px);*/
+  width: calc((100% - 60px) / 4);
   background-color: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  margin-left: auto;
-  margin-right: auto;
+}
+
+.command-members:not(:last-child) {
+  margin-right: 30px;
 }
 
 .command-name {
@@ -176,4 +196,26 @@ main {
   padding-bottom: 30px;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+
+.clients {
+  padding-bottom: 94px;
+}
+
+.clients-item {
+  display: flex;
+  padding-top: 50px;
+}
+
+.clients-companies {
+  /*display: flex;*/
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--clients);
+  border-radius: 4px;
+  width: calc((100% - 60px) / 6);
+}
+
+.clients-companies:not(:last-child) {
+  margin-right: 30px;
 }
