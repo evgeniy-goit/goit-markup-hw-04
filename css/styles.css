@@ -6,6 +6,7 @@
   --white-background: #e5e5e5;
   --footer-background: #2f303a;
   --clients: #afb1b8;
+  --feautures-logo: #f5f4fa;
 }
 
 main {
@@ -97,9 +98,24 @@ main {
 }
 
 .features-list {
+  display: block;
   flex-basis: calc(100% / 4 - 30px);
-  margin-left: auto;
-  margin-right: auto;
+}
+
+.features-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features-list::before {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: var(--feautures-logo);
+  /*background-image: url(../images/logo/mail.svg);*/
+  background-repeat: no-repeat;
 }
 
 .features-scroll {
