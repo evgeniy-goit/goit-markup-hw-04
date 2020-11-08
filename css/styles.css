@@ -31,8 +31,8 @@ main {
   background-color: var(--footer-background);
   background-image: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
     ),
     url(../images/heroes.svg);
   background-repeat: no-repeat;
