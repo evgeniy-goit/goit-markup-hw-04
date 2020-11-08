@@ -148,14 +148,17 @@ h3 {
   align-items: center;
 }
 
-.logo-mail::before {
-  content: "";
+.logo-mail {
   display: block;
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  background-image: url(../images/logo/mail.svg);
-  background-repeat: no-repeat;
+  fill: var(--title-color);
+}
+
+.link:hover .logo-mail,
+.link:focus .logo-mail {
+  fill: var(--accent-color);
 }
 
 .logo-phone {
@@ -163,15 +166,17 @@ h3 {
   align-items: center;
 }
 
-.logo-phone::before {
-  content: "";
+.logo-phone {
   display: block;
   width: 10px;
   height: 16px;
   margin-right: 10px;
-  background-image: url(../images/logo/smartphone.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  fill: var(--title-color);
+}
+
+.link:hover .logo-phone,
+.link:focus .logo-phone {
+  fill: var(--accent-color);
 }
 
 .header-container .logo {
@@ -183,7 +188,7 @@ h3 {
 }
 
 .cont-link:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 
 .link {
@@ -235,6 +240,8 @@ header {
 }
 
 .contact-link {
+  display: flex;
+  align-items: center;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -244,9 +251,11 @@ header {
 
 footer {
   background-color: var(--footer-background);
+  display: flex;
 }
 
 .footer {
+  display: flex;
   padding-top: 60px;
 }
 
@@ -270,4 +279,49 @@ footer {
 
 .footer-contact {
   color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-icons {
+  margin-top: 12px;
+  margin-left: 70px;
+}
+
+.footer-icons-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 0px;
+}
+
+.footer-social-icons {
+  display: flex;
+  padding-top: 20px;
+}
+
+.footer-social-icons-items:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social-icons-svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--white);
+}
+
+.footer-social-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.footer-social-icons-link:hover,
+.footer-social-icons-link:focus {
+  background-color: var(--accent-color);
 }
